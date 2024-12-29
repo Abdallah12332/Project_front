@@ -14,7 +14,7 @@ import { SkeletonUtils } from 'three-stdlib'
  
 export default function Model(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('./public/assets/the_first_model/scene.gltf')
+  const { scene, animations } = useGLTF('./assets/the_first_model/scene.gltf')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone);
   const { actions,names } = useAnimations(animations, group);
@@ -535,4 +535,4 @@ actions[names[0]].reset().fadeIn(0.5).play();
   )
 }
 
-useGLTF.preload('./public/assets/the_first_model/scene.gltf')
+useGLTF.preload('./assets/the_first_model/scene.gltf')

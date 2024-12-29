@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 import { useEffect } from 'react'
 export default function Model(props) {
   const group = React.useRef()
-  const { nodes, materials, animations } = useGLTF('./public/assets/the_third_model/scene.gltf')
+  const { nodes, materials, animations } = useGLTF('./assets/the_third_model/scene.gltf')
   const { actions,names } = useAnimations(animations, group)
   useEffect(()=>{
     actions[names[0]].reset().fadeIn(0.5).play();
@@ -41,4 +41,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('./public/assets/the_third_model/scene.gltf')
+useGLTF.preload('./assets/the_third_model/scene.gltf')
