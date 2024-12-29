@@ -10,7 +10,7 @@ function App() {
 
  
 return(
-<Router>
+<Router basename='/Project_front' >
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>

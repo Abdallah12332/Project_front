@@ -1,15 +1,14 @@
 import { Suspense, useState ,useRef} from 'react'
 import '../App.css'
 import "/src/Header.css"
-import react from "../assets/react.svg"
-import nodejs from "../assets/nodejs1.png"
+import react from "../../public/assets/react.svg"
+import nodejs from "../../public/assets/nodejs1.png"
 import {Canvas,useFrame} from '@react-three/fiber'
 import {OrbitControls, PerspectiveCamera} from "@react-three/drei"
-import Robot_Shark from "../assets/the-model/Scene"
-import The_Green_Cube from "../assets/the-s-model/Scene"
-import Wow from '../assets/the-t-model/Scene'
-import whatsapp from "../assets/whatsapp.jpg"
-import telegram from "../assets/telegram.png"
+import Robot_Shark from "../../public/assets/the_second_model/Scene"
+import Wow from '../../public/assets/the_first_model/Scene'
+import whatsapp from "../../public/assets/whatsapp.jpg"
+import telegram from "../../public/assets/telegram.png"
 import { Form } from './Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -30,8 +29,8 @@ function Animation(){
   })
 
   return(
-    <mesh receiveShadow={true} castShadow={true} ref={sharkRef} position={[0,-3,0]} >
-      <Robot_Shark />
+    <mesh receiveShadow={true}  castShadow={true} ref={sharkRef} position={[0,-3,0]} >
+      <Robot_Shark  />
 
     </mesh>
   )
@@ -87,14 +86,14 @@ export const Home=()=> {
     <img src={react} alt="error" className='react' />
     <div >
    
-    <Canvas  >
+    <Canvas   >
       <PerspectiveCamera makeDefault  position={[0,0,15]} />
         <directionalLight intensity={0.1} castShadow={true} receiveShadow={true} />
         <Suspense fallback={'<div>Loading...</div>'}>
 
-    <Animation1/>
+    <Animation1 />
         </Suspense>
-        <OrbitControls  enableDamping={true} />
+        <OrbitControls enableZoom={false}  enableDamping={true} />
       </Canvas>
     </div>
     </div>
@@ -124,7 +123,7 @@ export const Home=()=> {
     <Animation/>
     </Suspense>
   
-    <OrbitControls enableDamping={true}    />
+    <OrbitControls enableDamping={true} enableZoom={false}   />
     </Canvas>
       </div>
     </div>

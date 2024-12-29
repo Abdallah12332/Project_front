@@ -3,7 +3,7 @@ import "./About.css"
 import "../App.css"
 import {Canvas,useFrame} from '@react-three/fiber'
 import {OrbitControls, PerspectiveCamera} from "@react-three/drei"
-import {Model} from"../assets/paper_pen_one/Scene"
+import Model from "../../public/assets/the_third_model/Scene"
 export const About = () => {
   
     
@@ -35,7 +35,7 @@ export const About = () => {
     
         </mesh>
         </Suspense>
-        <OrbitControls  enableDamping={true} />
+        <OrbitControls enableZoom={false} enableDamping={true} />
       </Canvas>
        
         
