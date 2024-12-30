@@ -10,7 +10,7 @@ Title: Robot Shark
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('./public/assets/the_second_model/scene.gltf')
+  const { nodes, materials } = useGLTF('/assets/the_second_model/scene.gltf')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-0.053, 0, 0]}>
@@ -62,4 +62,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('./public/assets/the_second_model/scene.gltf')
+useGLTF.preload('/assets/the_second_model/scene.gltf')
