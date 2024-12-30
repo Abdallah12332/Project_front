@@ -51,8 +51,9 @@ color: black;
 
 }
 .react-p{
-    font-size: 80px;
+    font-size: 5ch;
     position: relative;
+    margin: 70px 70px 70px 0px ;
 }
 
 
@@ -289,8 +290,8 @@ canvas{
 .list1 {
     list-style: none;
     display: flex;
-    
-    margin-left: -40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .html{
@@ -448,6 +449,7 @@ canvas{
 .list2{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     
 }
 .list2 li {
@@ -458,6 +460,7 @@ canvas{
 .s-middle{
 display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 .nodejs{
     mix-blend-mode: multiply;
@@ -507,26 +510,7 @@ display: flex;
 .mongodb:hover::after{
     width: 100%;
 }
-.unknown{
-    color: gray;
-    text-shadow: 0 0 10px gray;
-    position: relative;
-    width: max-content;
-}
-.unknown::after{
-    content: " ";
-    height: 3px;
-    width: 0%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    border-radius: 5px;
-    background:linear-gradient(to right,gray,gray);
-    transition:all 0.5s ease-in-out;
-}
-.unknown:hover::after{
-    width: 100%;
-}
+
 .sql{
     color:rgb(0, 140, 186);
     text-shadow: 0 0 10px  rgb(0, 140, 186) ;
@@ -600,155 +584,12 @@ display: flex;
     }
 }
 
-
-
-
-
-@media (max-width:1094px) {
-    .list2 li {
-        padding: 0px;
-        margin-right: 50px;
-        font-size: 50px;
-    }
-}
-@media (max-width:801px) {
-    .list2 li {
-        padding: 0px;
-        margin-right: 40px;
-        font-size: 30px;
-    }
-}
-@media (max-width:753px) {
-    .list2 li{
-        padding: 0px;
-        margin-right: 30px;
-        font-size: 20px;
-    }
-}
-@media (max-width:542px) {
-    .list2 li{
-        padding: 0px;
-        margin-right: 10px;
-        font-size: 20px;
-    }
-}
-@media (max-width:420px) {
-    .list2 li {
-        padding: 0px;
-        margin-right: 10px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width:371px) {
-    .list2 li{
-        padding: 0px;
-        margin-right: 20px;
-        font-size: 10px;
-    }
-}
-@media (max-width:1512px) {
-   .list1 li {
-    padding:40px;
-    margin-right: 40px;
-    font-size: 40px;
-}
-}
-@media (max-width:1454px) {
-    .list1 li {
-        padding: 30px;
-        margin-right: 40px;
-
-        font-size: 30px;
-    } 
-}
-@media (max-width:1144px) {
-    .list1 li {
-        padding: 30px;
-        margin-right: 20px;
-
-        font-size: 30px;
-    } 
-}
-@media (max-width:1008px) {
-    .list1 li {
-        padding: 30px;
-        margin-right: 10px;
-
-        font-size: 30px;
-    } 
-}
-
-
-@media (max-width:933px) {
-    .list1 li {
-        padding: 30px;
-        margin-right: 0px;
-
-        font-size: 30px;
-    } 
-}
-@media (max-width:866px) {
-    .list1 li {
-        padding: 30px;
-        margin-right: 0px;
-        font-size: 20px;
-    } 
-}
-@media (max-width:720px) {
-    .list1 li {
-        padding: 20px;
-        margin-right: 0px;
-        font-size: 20px;
-    } 
-}
-@media (max-width:576px) {
-    .list1 li {
-        padding:10px;
-        margin-right: 0px;
-        font-size: 20px;
-    } 
-}
-@media (max-width:420px) {
-    .list1 li {
-        padding:10px;
-        margin-right: 0px;
-        font-size: 15px;
-    } 
-}
-@media (max-width:350px) {
-    .list1 li {
-        padding:10px;
-        margin-right: 0px;
-        font-size: 10px;
-    } 
-}
-
 @media (max-width:400px) {
     .what-i-know{
         font-size: 30px;
     }
 }
-@media (max-width:1022px) {
-    .react-p{
-        font-size: 10vh;
-    }
-}
-@media (max-width:935px) {
-    .react-p{
-        font-size:7vh ;
-    }
-}
-@media (max-width:624px) {
-    .react-p{
-        font-size:5vh ;
-    }
-}
-@media (max-width:450px) {
-    .react-p{
-        font-size:3vh;
-    }
-}
+
 
 @media (max-width:1304px) {
     

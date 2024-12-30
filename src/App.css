@@ -2,6 +2,7 @@
 .middle{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 body{
     background: linear-gradient(to top,rgb(0, 191, 255),rgb(159, 0, 251));

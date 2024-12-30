@@ -132,10 +132,10 @@ export const Home=()=> {
     <ul className='list2'>
       <li ><p className='Nodejs'>Node.js</p></li>
       <li ><p className='mongodb'>Mongodb</p></li>
-      <li ><p  className='unknown'>and some libararies</p></li>
+      
       
     </ul>
-<p className={isActive? "change1  pf "   : "change pf"}>to contact with me</p>
+<p className={isActive? "change1  pf "   : "change pf"} style={{padding:80}}>to contact with me</p>
     <footer className='footer'>
     <p className={isActive? "change1  what-p "   : "change what-p"}>_</p> <img className='what' src={whatsapp} alt='sorry error this image failed to be here' /> <p style={{color:'green'}}> 01061169008</p>   
      <img className='telegram' src={telegram} alt='sorry error this image failed to be here' /> <p className='tel-p'>_</p>
